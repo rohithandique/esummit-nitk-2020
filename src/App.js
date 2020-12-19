@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import "tailwindcss/dist/base.css"
+import AnimationRevealPage from "helpers/AnimationRevealPage"
+import Hero from "components/hero/Hero"
+import Speakers from "components/features/Speakers"
+import Pitch from "components/pitch/Pitch"
+import Workshops from "components/features/Workshops"
+import Events from "components/events/Events"
+import Footer from "components/footers/Footer"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AnimationRevealPage disabled>
+      <Hero />
+      <Speakers />
+      <Pitch />
+      <Workshops />
+      <Events />
+      <Footer />
+    </AnimationRevealPage>
+  )
 }
 
-export default App;
+export default App
