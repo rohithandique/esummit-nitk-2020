@@ -91,31 +91,31 @@ export default () => {
   const cards = [
     {
       imageSrc: "https://images.pexels.com/photos/5273607/pexels-photo-5273607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "Case Study",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+      title: "Insanis Ipsum",
+      description: "A great way to display your creativity and explore the realms of marketing and advertisement. Device a complete marketing framework for a product and get creative!",
       locationText: "Friday 14th",
       pricingText: "Rs 5000 - 1st Prize",
       url: "https://dare2compete.com/"
     },
     {
       imageSrc: "https://images.pexels.com/photos/4778667/pexels-photo-4778667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "Biz Quiz",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+      title: "Investofin",
+      description: "The world of stock market is an unknown entity for the uninformed but a money minting machine for the enthusiasts! Take part in the toughest Mock Stock Competition.",
       locationText: "Saturday 15th",
       pricingText: "Rs 5000 - 1st Prize",
       url: "https://dare2compete.com/"
     },
     {
       imageSrc: "https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "Mock Stocks",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+      title: "The Boardroom",
+      description: "Ever pictured yourself in a critical corporate position? We present to you an opportunity to put yourself in those shoes and reveal to the world the executives of tomorrow.",
       locationText: "Monday 17th",
       pricingText: "Rs 5000 - 1st Prize",
       url: "https://dare2compete.com/"
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Something Else",
+      title: "Biz Quiz",
       description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
       locationText: "Sunday 16th",
       pricingText: "USD 99/Day",
@@ -160,7 +160,7 @@ export default () => {
                 </SecondaryInfoContainer>
                 <Description>{card.description}</Description>
               </TextInfo>
-              <PrimaryButton ><a href={card.url} target="_blank" rel="noreferrer">Enter Now</a></PrimaryButton>
+              <PrimaryButton ><a href={card.url} target="_blank" rel="noreferrer">Know More</a></PrimaryButton>
             </Card>
           ))}
         </CardSlider>

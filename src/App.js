@@ -7,6 +7,8 @@ import Pitch from "components/pitch/Pitch"
 import Workshops from "components/features/Workshops"
 import Events from "components/events/Events"
 import Footer from "components/footers/Footer"
+import Sponsors from "components/sponsors/Sponsors"
+import Panel from "components/panel/Panel"
 
 
 function App() {
@@ -15,8 +17,10 @@ function App() {
       <Hero />
       <Speakers />
       <Pitch />
-      <Workshops />
       <Events />
+      <Workshops />
+      <Panel />
+      <Sponsors />
       <Footer />
     </AnimationRevealPage>
   )

@@ -40,7 +40,7 @@ const Answer = motion.custom(tw.dd`pointer-events-none text-sm sm:text-base lead
 export default ({
   subheading = "",
   heading = "E-Pitch",
-  description = "Pitch your startup to top businessmen, venture capitalists, incubators and top investors.",
+  description = "Getting financial support is not easy and here we bring you the opportunity to pitch our investors with your start-up idea and get prize money of Rs. 50,000 and technical support and advices from the investors for your start-up.",
   imageSrc = "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   imageContain = false,
   imageShadow = true,
@@ -52,24 +52,44 @@ export default ({
    */
   const defaultFaqs = [
     {
-      question: "What is the process of applying?",
+      question: "What's the objective of the event?",
       answer:
-        "Something something and something."
+        "To support young entrepreneurs by providing them a platform with the investors backing them up for their start-ups with Financial and Technical support."
     },
     {
-      question: "Who are the investors?",
+      question: "What is the process of applying",
       answer:
-        "Someone idk."
+        "Click here to register for E-Pitch 2021. For the first round you have to send an email application with a filled questionnaire (it will be sent to you through email after you register) and basic information and documents of the company. Once you have qualified for Round 2, you have to send a video application of 5-10 minutes explaining your business to showcase brilliance of your idea."
     },
     {
-      question: "Is a B-Plan necessary",
+      question: "Who are the Investors?",
       answer:
-        "Need info here."
+        "Investors for E-Pitch 2021 are the best Businessmen, Venture Capitalist and Angel investor from across the country. Following are the investors for E-Pitch 2021:"
     },
     {
-      question: "Prize Money maybe?",
+      question: "Is a B-Plan necessary?",
       answer:
-        "Depends on something something."
+        "Yes, a B-Plan is must for E-Pitch. The B-Plan should include all the basic questions answered such as Problem statement, Solution to the problem statement, USP, Revenue model and other important things. You will be sent a B-Plan format through mail."
+    },
+    {
+      question: "What's the prize money for E-Pitch 2021?",
+      answer:
+        "E-Pitch 2021 will have a prize money of Rs 50,000, along with this you will also get to attend E-Talks, Panel discussion and the Case Crunch."
+    },
+    {
+      question: "What's the date for E-Pitch?",
+      answer:
+        "Date for the E-Pitch is ."
+    },
+    {
+      question: "What about COVID?",
+      answer:
+        "No need to worry about COVID. The event is being held online and you can attend it from anywhere."
+    },
+    {
+      question: "What's the minimum amount venture would get by the investors?",
+      answer:
+        "There's no such minimum amount you would get. The top 3 winners would get the prize money and we'll make sure all the start-ups get other required support from E-Cell NITK."
     }
   ];
 
