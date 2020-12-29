@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import panelDiscussionImageSrc from "images/panel-discussion.svg";
@@ -17,7 +18,7 @@ const ImageColumn = tw(Column)`md:w-5/12 xl:w-6/12 flex-shrink-0 relative`;
 const TextColumn = styled(Column)(props => [
   tw`md:w-7/12 xl:w-6/12 mt-16 md:mt-0`,
   props.textOnLeft ? tw`md:pr-12 lg:pr-16 md:order-first` : tw`md:pl-12 lg:pl-16 md:order-last`
-]);
+]); 
 
 const Image = styled.img(props => [
   props.imageRounded && tw``,
@@ -61,6 +62,12 @@ const Controls = styled.div`
     ${tw`my-3 border-r-0`}
   }
 `;
+
+const PrimaryButton = styled(PrimaryButtonBase)(props => [
+  tw`mt-12 text-sm inline-block mx-auto md:mx-0`,
+  props.buttonRounded && tw`rounded-full`
+]);
+
 const ControlButton = styled.button`
   ${tw`mx-3 p-4 rounded-full  duration-300 bg-gray-200 hover:bg-gray-300 text-primary-500 hover:text-primary-700 focus:outline-none focus:shadow-outline`}
   svg {
@@ -69,15 +76,18 @@ const ControlButton = styled.button`
 `;
 
 export default ({
+  buttonRounded = true,
+  primaryButtonText = "Coming Soon",
+  primaryButtonUrl = "",
   imageSrc = panelDiscussionImageSrc,
   imageRounded = true,
   imageBorder = false,
   imageShadow = false,
-  subheading = "Panel Discussion",
+  subheading = "PANEL DISCUSSION",
   heading = "National Education Policy 2020",
   description = "A panel comprising of distinguished professors, professionals and industry experts will discuss, with students from NITK, on the topic of National Education Policy - it's implementation, it's advantages and disadvantages and what it means for education and the future of India. Witness a discussion like never before as panelists share their opinions, thoughts, views and suggestions on one of the most relevant topics related to education in India today.",
   textOnLeft = false,
-  testimonials = [
+  testimonials = [/*
     {
       profileImageSrc:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
@@ -95,21 +105,21 @@ export default ({
         "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
       customerName: "Adam Cuppy",
       customerTitle: "Founder, EventsNYC"
-    }
+    }*/
   ]
 }) => {
   const [sliderRef, setSliderRef] = useState(null);
 
   return (
-    <Container>
+    <Container id="panel">
       <ContentWithPaddingXl>
         <Row>
           <ImageColumn>
             <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
           </ImageColumn>
           <TextColumn textOnLeft={textOnLeft}>
-            <Subheading>{subheading}</Subheading>
-            <Heading>{heading}</Heading>
+            <Subheading style={{color: "#000"}}>{subheading}</Subheading>
+            <Heading style={{color: "#0762b0"}}>{heading}</Heading>
             <Description>{description}</Description>
             <TestimonialSlider arrows={false} ref={setSliderRef}>
               {testimonials.map((testimonial, index) => (
@@ -129,6 +139,7 @@ export default ({
                         <CustomerTitle>{testimonial.customerTitle}</CustomerTitle>
                       </CustomerTextInfo>
                     </CustomerInfo>
+                    {/*
                     <Controls>
                       <ControlButton onClick={sliderRef?.slickPrev}>
                         <ArrowLeftIcon />
@@ -137,11 +148,14 @@ export default ({
                       <ControlButton onClick={sliderRef?.slickNext}>
                         <ArrowRightIcon />
                       </ControlButton>
-                    </Controls>
+                    </Controls>*/}
                   </CustomerInfoAndControlsContainer>
                 </Testimonial>
               ))}
             </TestimonialSlider>
+            <PrimaryButton style={{backgroundColor: "#0762b0"}} buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
+              {primaryButtonText}
+            </PrimaryButton>
           </TextColumn>
         </Row>
       </ContentWithPaddingXl>

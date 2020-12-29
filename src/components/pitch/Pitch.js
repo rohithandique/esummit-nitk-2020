@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import pitchImageSrc from "images/pitch.svg";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { ReactComponent as PlusIcon } from "feather-icons/dist/icons/plus.svg";
 import { ReactComponent as MinusIcon } from "feather-icons/dist/icons/minus.svg";
@@ -40,8 +41,8 @@ const Answer = motion.custom(tw.dd`pointer-events-none text-sm sm:text-base lead
 export default ({
   subheading = "",
   heading = "E-Pitch",
-  description = "Getting financial support is not easy and here we bring you the opportunity to pitch our investors with your start-up idea and get prize money of Rs. 50,000 and technical support and advices from the investors for your start-up.",
-  imageSrc = "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  description = "Getting financial support is not easy and here we bring you the opportunity to pitch our investors with your start-up idea and get technical support and advices from the investors for your start-up.",
+  imageSrc = pitchImageSrc,
   imageContain = false,
   imageShadow = true,
   faqs = null
@@ -59,27 +60,27 @@ export default ({
     {
       question: "What is the process of applying",
       answer:
-        "Click here to register for E-Pitch 2021. For the first round you have to send an email application with a filled questionnaire (it will be sent to you through email after you register) and basic information and documents of the company. Once you have qualified for Round 2, you have to send a video application of 5-10 minutes explaining your business to showcase brilliance of your idea."
+        "Registration link will be put up soon"/* For the first round you have to send an email application with a filled questionnaire (it will be sent to you through email after you register) and basic information and documents of the company. Once you have qualified for Round 2, you have to send a video application of 5-10 minutes explaining your business to showcase brilliance of your idea."*/
     },
     {
       question: "Who are the Investors?",
       answer:
-        "Investors for E-Pitch 2021 are the best Businessmen, Venture Capitalist and Angel investor from across the country. Following are the investors for E-Pitch 2021:"
+        "Investors for E-Pitch 2021 will be announced soon."
     },
     {
       question: "Is a B-Plan necessary?",
       answer:
         "Yes, a B-Plan is must for E-Pitch. The B-Plan should include all the basic questions answered such as Problem statement, Solution to the problem statement, USP, Revenue model and other important things. You will be sent a B-Plan format through mail."
     },
-    {
+    /*{
       question: "What's the prize money for E-Pitch 2021?",
       answer:
         "E-Pitch 2021 will have a prize money of Rs 50,000, along with this you will also get to attend E-Talks, Panel discussion and the Case Crunch."
-    },
+    },*/
     {
       question: "What's the date for E-Pitch?",
       answer:
-        "Date for the E-Pitch is ."
+        "Date for the E-Pitch will be announced."
     },
     {
       question: "What about COVID?",
@@ -103,7 +104,7 @@ export default ({
   };
 
   return (
-    <Container>
+    <Container id="pitch">
       <Content>
         <TwoColumn>
           <Column tw="hidden lg:block w-5/12 flex-shrink-0">
@@ -112,7 +113,7 @@ export default ({
           <Column>
             <FAQContent>
               {subheading ? <Subheading>{subheading}</Subheading> : null}
-              <Heading style={{color: "#5011cc"}}>{heading}</Heading>
+              <Heading style={{color: "#0762b0"}}>{heading}</Heading>
               <Description>{description}</Description>
               <FAQSContainer>
                 {faqs.map((faq, index) => (
@@ -125,7 +126,7 @@ export default ({
                   >
                     <Question>
                       <QuestionText>{faq.question}</QuestionText>
-                      <QuestionToggleIcon>
+                      <QuestionToggleIcon style={{backgroundColor: "#0762b0"}}>
                         {activeQuestionIndex === index ? <MinusIcon /> : <PlusIcon />}
                       </QuestionToggleIcon>
                     </Question>

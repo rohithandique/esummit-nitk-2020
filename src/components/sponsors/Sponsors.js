@@ -41,9 +41,9 @@ const CardLinks = styled.div`
 `
 
 export default ({
-  heading = "Meet Our Sponsors!",
+  heading = "Meet Our Sponsors and Partners!",
   subheading = "The lovely people behind us",
-  description = "Something telling people something",
+  description = "",
   cards = [
     {
       imageSrc: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
@@ -161,33 +161,33 @@ export default ({
     },
   ]
 }) => {
-  return (
-    <Container>
-      <ContentWithPaddingXl>
-        <HeadingContainer>
-          {subheading && <Subheading>{subheading}</Subheading>}
-          {heading && <Heading>{heading}</Heading> }
-          {description && <Description>{description}</Description> }
-        </HeadingContainer>
-        <Cards>
-          {cards.map((card, index) => (
-            <Card key={index}>
-              <CardImage imageSrc={card.imageSrc} />
-              <CardContent>
-                <span className="position">{card.position}</span>
-                <span className="name">{card.name}</span>
-                <CardLinks>
-                  {card.links.map((link, linkIndex) => (
-                    <a key={linkIndex} className="link" href={link.url}>
-                      <link.icon className="icon" />
-                    </a>
-                  ))}
-                </CardLinks>
-              </CardContent>
-            </Card>
-          ))}
-        </Cards>
-      </ContentWithPaddingXl>
-    </Container>
-  );
-};
+    return (
+      <Container>
+        <ContentWithPaddingXl>
+          <HeadingContainer>
+            {subheading && <Subheading style={{ color: "#000" }}>{subheading}</Subheading>}
+            {heading && <Heading style={{ color: "#0762b0" }}>{heading}</Heading>}
+            {description && <Description>{description}</Description>}
+          </HeadingContainer>
+          <Cards>
+            {cards.map((card, index) => (
+              <Card key={index}>
+                <CardImage imageSrc={card.imageSrc} />
+                <CardContent>
+                  <span className="position" style={{ color: "#0762b0" }}>{card.position}</span>
+                  <span className="name">{card.name}</span>
+                  <CardLinks>
+                    {card.links.map((link, linkIndex) => (
+                      <a key={linkIndex} className="link" href={link.url}>
+                        <link.icon className="icon" />
+                      </a>
+                    ))}
+                  </CardLinks>
+                </CardContent>
+              </Card>
+            ))}
+          </Cards>
+        </ContentWithPaddingXl>
+      </Container>
+    );
+  };

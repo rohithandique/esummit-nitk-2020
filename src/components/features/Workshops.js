@@ -41,7 +41,7 @@ const SvgDotPattern4 = tw(
 )`absolute bottom-0 right-0 transform translate-x-20 rotate-90 -translate-y-24 -z-10 opacity-25 text-primary-500 fill-current w-24`;
 
 export default () => {
-  const cards = [
+  const cards = [/*
     {
       imageSrc:
         "https://images.pexels.com/photos/5273607/pexels-photo-5273607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -70,16 +70,16 @@ export default () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://en.wikipedia.org/wiki/Main_Page"
-    }
+    }*/
   ];
 
   return (
-    <Container>
+    <Container id="workshops">
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle style={{color: "#5011cc"}}>E-Summit Workshops</HeadingTitle>
+          <HeadingTitle style={{color: "#0762b0"}}>E-Summit Workshops</HeadingTitle>
           <HeadingDescription>
-            Here are the workshops held in E-Summit 2020 curated by professionals.
+            Workshops at E-Summit NITK will introduce you to the entrepreneurial mindset and help you discover, learn and develop a wide range of skills. Participants develop creative capacity, entrepreneurial confidence, and acquire the necessary skills to solve real-life problems and learn from the best in the ind
           </HeadingDescription>
         </HeadingInfoContainer>
 
@@ -89,9 +89,9 @@ export default () => {
               <Image imageSrc={card.imageSrc} />
               <Details>
                 <Subtitle>{card.subtitle}</Subtitle>
-                <Title>{card.title}</Title>
+                <Title style={{color: "#0762b0"}}>{card.title}</Title>
                 <Description>{card.description}</Description>
-                <Link href={card.url}>See Workshop Details</Link>
+                <Link href={card.url} style={{color: "#0762b0"}}>See Workshop Details</Link>
               </Details>
             </Card>
           ))}

@@ -39,11 +39,11 @@ export default () => {
             <LogoText>E-Summit 2020</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Home</Link>
-            <Link href="#">E-Pitch</Link>
-            <Link href="#">E-Talks</Link>
-            <Link href="#">Competitions</Link>
-            <Link href="#">Workshops</Link>
+            <Link href="/">Home</Link>
+            <Link href="#pitch">E-Pitch</Link>
+            <Link href="#talks">E-Talks</Link>
+            <Link href="#comps">Competitions</Link>
+            <Link href="#workshops">Workshops</Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">

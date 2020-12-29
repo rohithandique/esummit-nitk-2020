@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import tw from "twin.macro";
 import styled from "styled-components";
+import investofinImageSrc from "images/Investofin-01.jpg";
+import boardroomImageSrc from "images/Boardroom-01.jpg";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons";
 import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
@@ -90,47 +92,47 @@ export default () => {
   /* Change this according to your needs */
   const cards = [
     {
-      imageSrc: "https://images.pexels.com/photos/5273607/pexels-photo-5273607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "Insanis Ipsum",
-      description: "A great way to display your creativity and explore the realms of marketing and advertisement. Device a complete marketing framework for a product and get creative!",
-      locationText: "Friday 14th",
-      pricingText: "Rs 5000 - 1st Prize",
+      imageSrc: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
+      title: "Case Crunch",
+      description: "Enjoy solving business problems? Brace yourselves to rack your brains, understand, analyze, and strategize for some of the most challenging problem statements!",
+      locationText: "Soon",
+      pricingText: "Soon",
       url: "https://dare2compete.com/"
     },
     {
-      imageSrc: "https://images.pexels.com/photos/4778667/pexels-photo-4778667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      imageSrc: investofinImageSrc,
       title: "Investofin",
       description: "The world of stock market is an unknown entity for the uninformed but a money minting machine for the enthusiasts! Take part in the toughest Mock Stock Competition.",
-      locationText: "Saturday 15th",
-      pricingText: "Rs 5000 - 1st Prize",
+      locationText: "Soon",
+      pricingText: "Soon",
       url: "https://dare2compete.com/"
     },
     {
-      imageSrc: "https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      imageSrc: boardroomImageSrc,
       title: "The Boardroom",
       description: "Ever pictured yourself in a critical corporate position? We present to you an opportunity to put yourself in those shoes and reveal to the world the executives of tomorrow.",
-      locationText: "Monday 17th",
-      pricingText: "Rs 5000 - 1st Prize",
+      locationText: "Soon",
+      pricingText: "Soon",
       url: "https://dare2compete.com/"
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Biz Quiz",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Sunday 16th",
-      pricingText: "USD 99/Day",
+      description: "Do you see yourself as the next Wolf on Wall Street? Get ready to unleash your inner Elon Musk, Einstein and Steve Jobs as you go head to head with fellow business enthusiasts and quizzing aficionados.",
+      locationText: "Soon",
+      pricingText: "Soon",
       url: "https://dare2compete.com/"
     },
   ]
-
+ 
   return (
-    <Container>
+    <Container id="comps">
       <Content>
         <HeadingWithControl>
           <Heading>Competitions</Heading>
-          <Controls>
-            <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
-            <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
+          <Controls >
+            <PrevButton style={{backgroundColor: "#0762b0"}} onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
+            <NextButton style={{backgroundColor: "#0762b0"}} onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
           </Controls>
         </HeadingWithControl>
         <CardSlider ref={setSliderRef} {...sliderSettings}>
@@ -140,9 +142,6 @@ export default () => {
               <TextInfo>
                 <TitleReviewContainer>
                   <Title>{card.title}</Title>
-                  <RatingsInfo>
-                    <Rating>{card.rating}</Rating>
-                  </RatingsInfo>
                 </TitleReviewContainer>
                 <SecondaryInfoContainer>
                   <IconWithText>
@@ -160,7 +159,7 @@ export default () => {
                 </SecondaryInfoContainer>
                 <Description>{card.description}</Description>
               </TextInfo>
-              <PrimaryButton ><a href={card.url} target="_blank" rel="noreferrer">Know More</a></PrimaryButton>
+              <PrimaryButton style={{backgroundColor: "#0762b0"}} ><a href={card.url} target="_blank" rel="noreferrer">Coming Soon</a></PrimaryButton>
             </Card>
           ))}
         </CardSlider>

@@ -20,7 +20,6 @@ function App() {
       <Events />
       <Workshops />
       <Panel />
-      <Sponsors />
       <Footer />
     </AnimationRevealPage>
   )

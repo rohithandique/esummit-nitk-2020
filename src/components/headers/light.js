@@ -89,7 +89,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLogoLink = (
     <LogoLink  href="/">
       <img src={logo} alt="logo" />
-      E-Summit 2020
+      E-Summit 2021
     </LogoLink>
   );
 

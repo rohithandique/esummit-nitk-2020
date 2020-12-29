@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import TeamIllustrationSrc from "images/team-illustration-2.svg";
+import TeamIllustrationSrc from "images/speakers.jpg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
@@ -63,12 +63,12 @@ export default ({
   subheading = "Come hear the biggest",
   heading = (
     <>
-      Entrepreneurs, Businessmen & Leaders speak.<p tw="text-primary-700">E-Talks 2020</p>
+      Entrepreneurs, Businessmen & Leaders speak.<p style={{color: "#0762b0"}}>E-Talks 2020</p>
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  primaryButtonText = "Watch Here",
-  primaryButtonUrl = "https://timerse.com",
+  description = "With a lineup of esteemed speakers, E-Talks is an event that gives people a deeper insight into what it takes to become an Entrepreneur and gives then an idea of what the journey to becoming successful looks like.",
+  primaryButtonText = "Coming Soon",
+  primaryButtonUrl = "",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
@@ -88,6 +88,7 @@ export default ({
    * `icon` must be a React SVG component. See how BriefcaseIcon is imported above. For a full list of available icons, see Feather Icons.
    */
   const defaultFeatures = [
+    /*
     {
       Icon: BriefcaseIcon,
       title: "Upcoming Speakers",
@@ -99,13 +100,13 @@ export default ({
       title: "Past Speakers",
       description: "We promise to offer you amazing life-changing experiences.",
       iconContainerCss: tw`bg-red-300 text-red-800`
-    }
+    }*/
   ];
 
   if (!features) features = defaultFeatures;
 
   return (
-    <Container>
+    <Container id="talks">
       <TwoColumn>
         <ImageColumn>
           <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
@@ -113,7 +114,7 @@ export default ({
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
-            <Subheading>{subheading}</Subheading>
+            <Subheading  style={{color: "#0762b0"}}>{subheading}</Subheading>
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
             <Features>
@@ -121,7 +122,7 @@ export default ({
                 <Feature key={index}>
                   <FeatureHeadingContainer>
                     <FeatureIconContainer
-                      iconFilled={iconFilled}
+                      iconFilled={iconFilled} 
                       iconRoundedFull={iconRoundedFull}
                       css={feature.iconContainerCss || iconContainerCss}
                     >
@@ -134,7 +135,7 @@ export default ({
               ))}
             </Features>
 
-            <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
+            <PrimaryButton style={{backgroundColor: "#0762b0"}} buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
               {primaryButtonText}
             </PrimaryButton>
           </TextContent>

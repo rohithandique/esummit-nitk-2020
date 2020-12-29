@@ -41,28 +41,28 @@ const SlantedBackground = styled.span`
   }
 `;
 
-const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 font-bold  duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
-
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">
-        E-Pitch
-      </NavLink>
-      <NavLink href="#">
+      <NavLink href="#talks">
         E-Talks
       </NavLink>
-      <NavLink href="#">
+      <NavLink href="#pitch">
+        E-Pitch
+      </NavLink>
+      <NavLink href="#comps">
         Competitions
       </NavLink>
-      <NavLink href="#">
+      <NavLink href="#workshops">
         Workshops
       </NavLink>
-      
+      <NavLink href="#panel">
+        Panel Discussion
+      </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink style={{backgroundColor: "#f148b5"}} href="/#">
-        E-Cell NITK
+      <PrimaryLink style={{backgroundColor: "#0762b0"}} href="https://ecell.nitk.ac.in" target="_blank" >
+        E-Cell Website
       </PrimaryLink>
     </NavLinks>
   ];
@@ -70,16 +70,19 @@ export default () => {
   return (
     <Container>
       <OpacityOverlay />
-      <HeroContainer>
+      <HeroContainer> 
         <StyledHeader links={navLinks} />
         <Content>
           <Heading>
               The Biggest Business Event of NITK
               <br />
-              <SlantedBackground>E-Summit 2020</SlantedBackground>
-              
+              <SlantedBackground style={{color: "#112f58"}}>E-Summit 2021</SlantedBackground>
+              <br />
+              <p style={{fontSize: "2.75vw"}}>15-17th January</p>
           </Heading>
-          <PrimaryAction style={{backgroundColor: "#f148b5"}}>Browse Events</PrimaryAction>
+          <PrimaryLink style={{backgroundColor: "#0762b0"}} href="#talks">
+            Browse Events
+          </PrimaryLink>
         </Content>
       </HeroContainer>
     </Container>
