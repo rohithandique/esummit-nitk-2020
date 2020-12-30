@@ -4,6 +4,8 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import investofinImageSrc from "images/Investofin-01.jpg";
 import boardroomImageSrc from "images/Boardroom-01.jpg";
+import quizImageSrc from "images/bizquiz.jpg";
+import caseImageSrc from "images/caseCrunch-main.jpg";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons";
 import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
@@ -92,7 +94,7 @@ export default () => {
   /* Change this according to your needs */
   const cards = [
     {
-      imageSrc: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
+      imageSrc: caseImageSrc,
       title: "Case Crunch",
       description: "Enjoy solving business problems? Brace yourselves to rack your brains, understand, analyze, and strategize for some of the most challenging problem statements!",
       locationText: "Soon",
@@ -116,7 +118,7 @@ export default () => {
       url: "https://dare2compete.com/"
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
+      imageSrc: quizImageSrc,
       title: "Biz Quiz",
       description: "Do you see yourself as the next Wolf on Wall Street? Get ready to unleash your inner Elon Musk, Einstein and Steve Jobs as you go head to head with fellow business enthusiasts and quizzing aficionados.",
       locationText: "Soon",

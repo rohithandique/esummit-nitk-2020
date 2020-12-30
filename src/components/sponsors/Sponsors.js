@@ -3,6 +3,9 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
+import ibhubsImageSrc from "images/logo-ibhubs.jpg";
+import jamboreeImageSrc from "images/logo-jamboree.png";
+import d2cImageSrc from "images/logo-d2c.png";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings";
 import {SectionDescription} from "components/misc/Typography";
 import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
@@ -43,13 +46,16 @@ const CardLinks = styled.div`
 export default ({
   heading = "Meet Our Sponsors and Partners!",
   subheading = "The lovely people behind us",
+  imageHref = "https://ibhubs.co/",
   description = "",
   cards = [
     {
-      imageSrc: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Founder",
-      name: "Adam Cuppy",
+      imageSrc: ibhubsImageSrc,
+      position: "Knowledge Partner",
+      imageHref: "https://ibhubs.co/",
+      name: "iB HUBS",
       links: [
+        /*
         {
           url: "https://twitter.com",
           icon: TwitterIcon,
@@ -61,14 +67,16 @@ export default ({
         {
           url: "https://github.com",
           icon: GithubIcon,
-        },
+        },*/
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Sr. Designer",
-      name: "Charlotte Hale",
+      imageSrc: d2cImageSrc,
+      position: "Online Hosting Partner",
+      name: "Dare 2 Compete",
+      imageHref: "https://dare2compete.com/",
       links: [
+        /*
         {
           url: "https://twitter.com",
           icon: TwitterIcon,
@@ -80,14 +88,15 @@ export default ({
         {
           url: "https://github.com",
           icon: GithubIcon,
-        },
+        },*/
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Jr. Designer",
-      name: "Silvester Wize",
-      links: [
+      imageSrc: jamboreeImageSrc,
+      position: "Education Partner",
+      name: "Jamboree",
+      imageHref: "https://www.jamboreeindia.com/",
+      links: [/*
         {
           url: "https://twitter.com",
           icon: TwitterIcon,
@@ -99,9 +108,10 @@ export default ({
         {
           url: "https://github.com",
           icon: GithubIcon,
-        },
+        },*/
       ],
     },
+    /*
     {
       imageSrc: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
       position: "Lead Developer",
@@ -158,7 +168,7 @@ export default ({
           icon: GithubIcon,
         },
       ],
-    },
+    },*/
   ]
 }) => {
     return (
@@ -172,7 +182,8 @@ export default ({
           <Cards>
             {cards.map((card, index) => (
               <Card key={index}>
-                <CardImage imageSrc={card.imageSrc} />
+                <a href= {card.imageHref} target="_blank"><CardImage style={{backgroundRepeat: "no-repeat"}} imageSrc={card.imageSrc} /></a>
+                
                 <CardContent>
                   <span className="position" style={{ color: "#0762b0" }}>{card.position}</span>
                   <span className="name">{card.name}</span>

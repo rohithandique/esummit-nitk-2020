@@ -58,7 +58,7 @@ export default ({
         "To support young entrepreneurs by providing them a platform with the investors backing them up for their start-ups with Financial and Technical support."
     },
     {
-      question: "What is the process of applying",
+      question: "What is the process of applying?",
       answer:
         "Registration link will be put up soon"/* For the first round you have to send an email application with a filled questionnaire (it will be sent to you through email after you register) and basic information and documents of the company. Once you have qualified for Round 2, you have to send a video application of 5-10 minutes explaining your business to showcase brilliance of your idea."*/
     },
