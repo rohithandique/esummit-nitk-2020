@@ -6,6 +6,8 @@ import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import ibhubsImageSrc from "images/logo-ibhubs.jpg";
 import jamboreeImageSrc from "images/logo-jamboree.png";
 import d2cImageSrc from "images/logo-d2c.png";
+import startupNewsImageSrc from "images/logo-startupnews.png";
+import socialShiftersImageSrc from "images/logo-socialshifters.png";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings";
 import {SectionDescription} from "components/misc/Typography";
 import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
@@ -96,6 +98,46 @@ export default ({
       position: "Education Partner",
       name: "Jamboree",
       imageHref: "https://www.jamboreeindia.com/",
+      links: [/*
+        {
+          url: "https://twitter.com",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://linkedin.com",
+          icon: LinkedinIcon,
+        },
+        {
+          url: "https://github.com",
+          icon: GithubIcon,
+        },*/
+      ],
+    },
+    {
+      imageSrc: startupNewsImageSrc,
+      position: "Online Media Partner",
+      name: "Startupnews.fyi",
+      imageHref: "https://www.startupnews.fyi/",
+      links: [/*
+        {
+          url: "https://twitter.com",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://linkedin.com",
+          icon: LinkedinIcon,
+        },
+        {
+          url: "https://github.com",
+          icon: GithubIcon,
+        },*/
+      ],
+    },
+    {
+      imageSrc: socialShiftersImageSrc,
+      position: "Social Entrepreneurship Partners",
+      name: "Social Shifters",
+      imageHref: "https://socialshifters.co/",
       links: [/*
         {
           url: "https://twitter.com",
