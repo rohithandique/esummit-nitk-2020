@@ -8,6 +8,10 @@ import jamboreeImageSrc from "images/logo-jamboree.png";
 import d2cImageSrc from "images/logo-d2c.png";
 import startupNewsImageSrc from "images/logo-startupnews.png";
 import socialShiftersImageSrc from "images/logo-socialshifters.png";
+import finotizeImageSrc from "images/logo-finotize.png";
+import kvcImageSrc from "images/logo-kvc.png";
+import ctmImageSrc from "images/logo-ctm.png";
+import mywaysImageSrc from "images/logo-myways.png";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings";
 import {SectionDescription} from "components/misc/Typography";
 import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
@@ -153,6 +157,90 @@ export default ({
         },*/
       ],
     },
+    {
+    imageSrc: finotizeImageSrc,
+      position: "Legal Partner",
+      name: "Finotize",
+      imageHref: "https://www.finotize.com/",
+      links: [
+        /*
+        {
+          url: "https://twitter.com",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://linkedin.com",
+          icon: LinkedinIcon,
+        },
+        {
+          url: "https://github.com",
+          icon: GithubIcon,
+        },*/
+      ],
+    },
+    {
+    imageSrc: kvcImageSrc,
+      position: "Venture Capital Partner",
+      name: "Kindle Ventures Capital",
+      imageHref: "https://www.kindlevc.com/",
+      links: [
+        /*
+        {
+          url: "https://twitter.com",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://linkedin.com",
+          icon: LinkedinIcon,
+        },
+        {
+          url: "https://github.com",
+          icon: GithubIcon,
+        },*/
+      ],
+    },
+    {
+      imageSrc: ctmImageSrc,
+        position: "Youth Partner",
+        name: "Campus Times Pune",
+        imageHref: "https://www.campustimespune.com/",
+        links: [
+          /*
+          {
+            url: "https://twitter.com",
+            icon: TwitterIcon,
+          },
+          {
+            url: "https://linkedin.com",
+            icon: LinkedinIcon,
+          },
+          {
+            url: "https://github.com",
+            icon: GithubIcon,
+          },*/
+        ],
+      },
+      {
+        imageSrc: mywaysImageSrc,
+          position: "Career Growth Partner",
+          name: "MyWays",
+          imageHref: "https://www.myways.in/",
+          links: [
+            /*
+            {
+              url: "https://twitter.com",
+              icon: TwitterIcon,
+            },
+            {
+              url: "https://linkedin.com",
+              icon: LinkedinIcon,
+            },
+            {
+              url: "https://github.com",
+              icon: GithubIcon,
+            },*/
+          ],
+        },
     /*
     {
       imageSrc: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
