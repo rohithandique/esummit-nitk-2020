@@ -21,7 +21,7 @@ const Heading = tw(SectionHeading)``;
 const Controls = tw.div`flex items-center`;
 const ControlButton = styled(PrimaryButtonBase)`
   ${tw`mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-2`}
-  svg {
+  svg { 
     ${tw`w-6 h-6`}
   }
 `;
@@ -161,7 +161,7 @@ export default () => {
                 </SecondaryInfoContainer>
                 <Description>{card.description}</Description>
               </TextInfo>
-              <PrimaryButton style={{backgroundColor: "#0762b0"}} ><a href={card.url} target="_blank" >Register</a></PrimaryButton>
+              <a href={card.url} target="_blank" ><PrimaryButton style={{backgroundColor: "#0762b0"}} >Register</PrimaryButton></a>
             </Card>
           ))}
         </CardSlider>
