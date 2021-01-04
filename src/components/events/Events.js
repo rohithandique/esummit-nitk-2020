@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import tw from "twin.macro";
 import styled from "styled-components";
-import investofinImageSrc from "images/Investofin-01.jpg";
-import boardroomImageSrc from "images/Boardroom-01.jpg";
+import investofinImageSrc from "images/investofin-05.jpg";
+import boardroomImageSrc from "images/executive-05.jpg";
 import quizImageSrc from "images/bizquiz.jpg";
-import caseImageSrc from "images/caseCrunch-main.jpg";
+import caseImageSrc from "images/casecrunch-05.jpg";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons";
 import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
@@ -97,25 +97,25 @@ export default () => {
       imageSrc: caseImageSrc,
       title: "Case Crunch",
       description: "Enjoy solving business problems? Brace yourselves to rack your brains, understand, analyze, and strategize for some of the most challenging problem statements!",
-      locationText: "Soon",
-      pricingText: "Soon",
-      url: "https://dare2compete.com/"
+      locationText: "5th Jan",
+      pricingText: "₹20k",
+      url: "https://dare2compete.com/o/2Kv3MoF"
     },
     {
       imageSrc: investofinImageSrc,
       title: "Investofin",
       description: "The world of stock market is an unknown entity for the uninformed but a money minting machine for the enthusiasts! Take part in the toughest Mock Stock Competition.",
-      locationText: "Soon",
-      pricingText: "Soon",
-      url: "https://dare2compete.com/"
+      locationText: "11th Jan",
+      pricingText: "₹7k",
+      url: "https://dare2compete.com/o/GCyeV7f"
     },
     {
       imageSrc: boardroomImageSrc,
-      title: "The Boardroom",
+      title: "E-Xecutive",
       description: "Ever pictured yourself in a critical corporate position? We present to you an opportunity to put yourself in those shoes and reveal to the world the executives of tomorrow.",
-      locationText: "Soon",
-      pricingText: "Soon",
-      url: "https://dare2compete.com/"
+      locationText: "11th Jan",
+      pricingText: "₹7k",
+      url: "https://dare2compete.com/o/MPuKEUp"
     },
     {
       imageSrc: quizImageSrc,
@@ -123,7 +123,7 @@ export default () => {
       description: "Do you see yourself as the next Wolf on Wall Street? Get ready to unleash your inner Elon Musk, Einstein and Steve Jobs as you go head to head with fellow business enthusiasts and quizzing aficionados.",
       locationText: "Soon",
       pricingText: "Soon",
-      url: "https://dare2compete.com/"
+      url: "https://dare2compete.com/f/e-summit-nitk21-national-institute-of-technology-surathkal-8799"
     },
   ]
  
@@ -161,7 +161,7 @@ export default () => {
                 </SecondaryInfoContainer>
                 <Description>{card.description}</Description>
               </TextInfo>
-              <PrimaryButton style={{backgroundColor: "#0762b0"}} ><a href={card.url} target="_blank" rel="noreferrer">Coming Soon</a></PrimaryButton>
+              <PrimaryButton style={{backgroundColor: "#0762b0"}} ><a href={card.url} target="_blank" >Register</a></PrimaryButton>
             </Card>
           ))}
         </CardSlider>

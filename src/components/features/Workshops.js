@@ -79,7 +79,7 @@ export default () => {
         <HeadingInfoContainer>
           <HeadingTitle style={{color: "#0762b0"}}>E-Summit Workshops</HeadingTitle>
           <HeadingDescription>
-            Workshops at E-Summit NITK will introduce you to the entrepreneurial mindset and help you discover, learn and develop a wide range of skills. Participants develop creative capacity, entrepreneurial confidence, and acquire the necessary skills to solve real-life problems and learn from the best in the ind
+            Workshops at E-Summit NITK will introduce you to the entrepreneurial mindset and help you discover, learn and develop a wide range of skills. Participants develop creative capacity, entrepreneurial confidence, and acquire the necessary skills to solve real-life problems and learn from the best in the industry.
           </HeadingDescription>
         </HeadingInfoContainer>
 
