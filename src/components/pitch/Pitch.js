@@ -60,7 +60,7 @@ export default ({
     {
       question: "What is the process of applying?",
       answer:
-        "Registration link will be put up soon"/* For the first round you have to send an email application with a filled questionnaire (it will be sent to you through email after you register) and basic information and documents of the company. Once you have qualified for Round 2, you have to send a video application of 5-10 minutes explaining your business to showcase brilliance of your idea."*/
+        "The first step is to register on D2C, the link for which is provided in this section. After that there are three rounds. First round is Pitch Deck which is a  pre-competition round where the Business Plan/Pitch Deck of Startup/ Startup Idea is submitted for screening. Second Round is Questionnaire Round in which the team has  to fill up a questionnaire based on the business idea and plans for the future. The third round is Final Pitching Event in which the team needs to Pitch in front of our esteemed panel of investors in the hope of landing that company transforming investment."
     },
     {
       question: "Who are the Investors?",
@@ -72,11 +72,11 @@ export default ({
       answer:
         "Yes, a B-Plan is must for E-Pitch. The B-Plan should include all the basic questions answered such as Problem statement, Solution to the problem statement, USP, Revenue model and other important things. You will be sent a B-Plan format through mail."
     },
-    /*{
+    {
       question: "What's the prize money for E-Pitch 2021?",
       answer:
-        "E-Pitch 2021 will have a prize money of Rs 50,000, along with this you will also get to attend E-Talks, Panel discussion and the Case Crunch."
-    },*/
+        "E-Pitch 2021 will have a prize money of Rs 30,000, along with this you will also get to attend E-Talks, Panel discussion and the Case Crunch."
+    },
     {
       question: "What's the date for E-Pitch?",
       answer:
