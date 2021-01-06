@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import pitchImageSrc from "images/pitch.svg";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { ReactComponent as PlusIcon } from "feather-icons/dist/icons/plus.svg";
@@ -38,7 +39,15 @@ const QuestionToggleIcon = styled.span`
 `;
 const Answer = motion.custom(tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed`);
 
+const PrimaryButton = styled(PrimaryButtonBase)(props => [
+  tw`mt-12 text-sm inline-block mx-auto md:mx-0`,
+  props.buttonRounded && tw`rounded-full`
+]);
+
 export default ({
+  primaryButtonText = "Register Now",
+  primaryButtonUrl = "https://dare2compete.com/o/e-pitch-e-summit-nitk21-national-institute-of-technology-karnataka-nitk-surathkal-142710",
+  buttonRounded = true,
   subheading = "",
   heading = "E-Pitch",
   description = "Getting financial support is not easy and here we bring you the opportunity to pitch our investors with your start-up idea and get technical support and advices from the investors for your start-up.",
@@ -50,7 +59,7 @@ export default ({
   /*
    * You can modify FAQs either by modifying the below defaultFaqs array or by passing a custom array of FAQs using
    * the faqs prop
-   */
+   */ 
   const defaultFaqs = [
     {
       question: "What's the objective of the event?",
@@ -115,6 +124,9 @@ export default ({
               {subheading ? <Subheading>{subheading}</Subheading> : null}
               <Heading style={{color: "#0762b0"}}>{heading}</Heading>
               <Description>{description}</Description>
+              <PrimaryButton style={{backgroundColor: "#0762b0"}} buttonRounded={buttonRounded} as="a" href={primaryButtonUrl} target="_blank">
+              {primaryButtonText}
+              </PrimaryButton>
               <FAQSContainer>
                 {faqs.map((faq, index) => (
                   <FAQ
