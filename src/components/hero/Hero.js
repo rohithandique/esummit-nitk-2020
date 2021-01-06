@@ -79,6 +79,7 @@ export default () => {
               <br />
               <SlantedBackground style={{color: "#112f58"}}>E-Summit 2021</SlantedBackground>
               <br />
+              <p style={{fontSize: "3vw"},{margin:"10px 0"}}>Inspire.Invent.Integrate</p>
               <p style={{fontSize: "2.75vw"}}>15-17th January</p>
           </Heading>
           <PrimaryLink style={{backgroundColor: "#0762b0"}} href="#talks">
