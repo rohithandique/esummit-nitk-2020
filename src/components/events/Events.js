@@ -119,10 +119,10 @@ export default () => {
     },
     {
       imageSrc: quizImageSrc,
-      title: "Biz Quiz",
+      title: "SciBizTech Quiz",
       description: "Do you see yourself as the next Wolf on Wall Street? Get ready to unleash your inner Elon Musk, Einstein and Steve Jobs as you go head to head with fellow business enthusiasts and quizzing aficionados.",
-      locationText: "Soon",
-      pricingText: "Soon",
+      locationText: "16th Jan",
+      pricingText: "₹9k",
       url: "https://dare2compete.com/f/e-summit-nitk21-national-institute-of-technology-surathkal-8799"
     },
   ]
