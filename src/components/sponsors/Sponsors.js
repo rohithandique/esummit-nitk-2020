@@ -12,6 +12,7 @@ import finotizeImageSrc from "images/logo-finotize.png";
 import kvcImageSrc from "images/logo-kvc.png";
 import ctmImageSrc from "images/logo-ctm.png";
 import mywaysImageSrc from "images/logo-myways.png";
+import startup201ImageSrc from "images/logo-startup201.png";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings";
 import {SectionDescription} from "components/misc/Typography";
 import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
@@ -225,6 +226,27 @@ export default ({
           position: "Career Growth Partner",
           name: "MyWays",
           imageHref: "https://www.myways.in/",
+          links: [
+            /*
+            {
+              url: "https://twitter.com",
+              icon: TwitterIcon,
+            },
+            {
+              url: "https://linkedin.com",
+              icon: LinkedinIcon,
+            },
+            {
+              url: "https://github.com",
+              icon: GithubIcon,
+            },*/
+          ],
+        },
+        {
+          imageSrc: startup201ImageSrc,
+          position: "Outreach Partner",
+          imageHref: "https://startup201.com/",
+          name: "Startup201",
           links: [
             /*
             {

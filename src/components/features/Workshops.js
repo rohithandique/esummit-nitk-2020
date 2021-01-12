@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import workshopImageSrc from "images/workshop.jpg";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 
@@ -41,28 +42,26 @@ const SvgDotPattern4 = tw(
 )`absolute bottom-0 right-0 transform translate-x-20 rotate-90 -translate-y-24 -z-10 opacity-25 text-primary-500 fill-current w-24`;
 
 export default () => {
-  const cards = [/*
+  const cards = [
     {
-      imageSrc:
-        "https://images.pexels.com/photos/5273607/pexels-photo-5273607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      subtitle: "Paid",
-      title: "Case Study Competition",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://en.wikipedia.org/wiki/Main_Page"
-    },
-
-    {
-      imageSrc:
-        "https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      imageSrc:workshopImageSrc,
       subtitle: "Free",
-      title: "Mock Stocks",
+      title: "Digital Marketing and E-Commerce Management",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://en.wikipedia.org/wiki/Main_Page"
+        "Daksh is a COO at Avignyata Inc., which was established in 2007. It is a Digital Marketing Agency. Mr. Daksh has worked with 1400+ clients from various industries. He has been a Digital Marketing trainer since 2014 and has trained students from Institutes and colleges. He has also done corporate training. His area of expertise includes SEM, SMM, Email, and E-Commerce Management. He is a featured technology writer at Hindustan Times. Last but not the least, he is a stationary addict. He also owns Steno stationery.",
+      url: "https://dare2compete.com/o/St9dWT5"
     },
 
     {
+      imageSrc:workshopImageSrc,
+      subtitle: "Free",
+      title: "Elements of a Strong Business Model",
+      description:
+        "At iB Hubs, Abhinav leads the collaborations with state Governments of Uttar Pradesh and Haryana in North India and serves as a mentor for startups supported by iB Hubs. Abhinav plays a key role in mentoring startups on innovation, validation, and commercialization. He has guided 80+ startups from diverse fields including drone manufacturing, solar design, EdTech, AI, etc., and trained 2000+ students through sensitization programs in North India. He is a passionate teacher and quit his job at Harman International in 2014 to teach 49 excitable children in the slum areas of East Delhi. In 2015, Abhinav founded a transformational social project called Carpe Diem, a holistic residential camp for children from underserved schools in New Delhi. Abhinav did his MBA from HKUST Business School in Hong Kong, and his B Tech in Computer Science from BITS - Pilani, Hyderabad.",
+      url: "https://dare2compete.com/o/rT3CJLM"
+    }
+
+    /*{
       imageSrc:
         "https://images.pexels.com/photos/4778667/pexels-photo-4778667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       subtitle: "Exclusive",
