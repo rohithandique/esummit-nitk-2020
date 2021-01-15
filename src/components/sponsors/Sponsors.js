@@ -13,6 +13,7 @@ import kvcImageSrc from "images/logo-kvc.png";
 import ctmImageSrc from "images/logo-ctm.png";
 import mywaysImageSrc from "images/logo-myways.png";
 import startup201ImageSrc from "images/logo-startup201.png";
+import kapitusImageSrc from "images/logo-kapitus.jpg";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings";
 import {SectionDescription} from "components/misc/Typography";
 import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
@@ -56,6 +57,27 @@ export default ({
   imageHref = "https://ibhubs.co/",
   description = "",
   cards = [
+    {
+      imageSrc: kapitusImageSrc,
+      position: "Title Sponsor",
+      name: "Kapitus",
+      imageHref: "https://kapitus.com/",
+      links: [
+        /*
+        {
+          url: "https://twitter.com",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://linkedin.com",
+          icon: LinkedinIcon,
+        },
+        {
+          url: "https://github.com",
+          icon: GithubIcon,
+        },*/
+      ],
+    },
     {
       imageSrc: ibhubsImageSrc,
       position: "Knowledge Partner",
@@ -247,6 +269,27 @@ export default ({
           position: "Outreach Partner",
           imageHref: "https://startup201.com/",
           name: "Startup201",
+          links: [
+            /*
+            {
+              url: "https://twitter.com",
+              icon: TwitterIcon,
+            },
+            {
+              url: "https://linkedin.com",
+              icon: LinkedinIcon,
+            },
+            {
+              url: "https://github.com",
+              icon: GithubIcon,
+            },*/
+          ],
+        },
+        {
+          imageSrc: "https://cdn.shortpixel.ai/spai/ret_img/https://www.airmeet.com/hub/wp-content/uploads/2020/05/AM_Logo_Dark_WM.svg",
+          position: "PLatform Partner",
+          name: "Airmeet",
+          imageHref: "https://www.airmeet.com/",
           links: [
             /*
             {

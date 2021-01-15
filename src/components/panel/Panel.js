@@ -77,8 +77,8 @@ const ControlButton = styled.button`
 
 export default ({
   buttonRounded = true,
-  primaryButtonText = "Coming Soon",
-  primaryButtonUrl = "",
+  primaryButtonText = "Register Here",
+  primaryButtonUrl = "https://dare2compete.com/f/zUioMfG",
   imageSrc = panelDiscussionImageSrc,
   imageRounded = true,
   imageBorder = false,

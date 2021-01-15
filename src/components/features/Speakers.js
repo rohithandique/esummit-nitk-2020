@@ -67,8 +67,8 @@ export default ({
     </>
   ),
   description = "With a lineup of esteemed speakers, E-Talks is an event that gives people a deeper insight into what it takes to become an Entrepreneur and gives then an idea of what the journey to becoming successful looks like.",
-  primaryButtonText = "Coming Soon",
-  primaryButtonUrl = "",
+  primaryButtonText = "Register Here",
+  primaryButtonUrl = "https://dare2compete.com/f/zUioMfG",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
@@ -88,8 +88,8 @@ export default ({
    * `icon` must be a React SVG component. See how BriefcaseIcon is imported above. For a full list of available icons, see Feather Icons.
    */
   const defaultFeatures = [
-    /*
-    {
+    
+    /*{
       Icon: BriefcaseIcon,
       title: "Upcoming Speakers",
       description: "We have the best professional speakers across the globe talk here.",
